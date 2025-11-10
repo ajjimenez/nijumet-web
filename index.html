@@ -6,29 +6,29 @@
     <title>N I J U M E T</title>
     <style>
         @font-face {
-  font-family: myFont;
-  src: url(fonts/Silkscreen-Regular.ttf);
-}
-
-        body {
-            font-family: Silkscreen;
+            font-family: myFont;
             src: url(fonts/Silkscreen-Regular.ttf);
+        }
+        
+        * {
+            font-family: myFont, monospace;
+        }
+        
+        body {
             margin: 0;
             padding: 0;
             background-color: #000000;
             color: white;
-             * {
-   font-family: myFont;
-}
-    p {
-      font-size: 16px;
-    }
-            color: white;
         }
+        
+        p {
+            font-size: 16px;
+        }
+        
         .banner {
             width: 100%;
-            height: 2000px; /* Adjust height as needed */
-            background-image: url('images/NijumetIntro.png'); /* Replace with your image path */
+            height: 2000px;
+            background-image: url('images/NijumetIntro.png');
             background-size: cover;
             background-position: center;
             color: white;
@@ -36,64 +36,57 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: Silkscreen;
-            src: url(fonts/Silkscreen-Regular.ttf);
             font-size: 2em;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
+        
         .content {
-            font-family: Silkscreen;
-            src: url(fonts/Silkscreen-Regular.ttf);
             padding: 20px;
             max-width: 100%;
             margin: 20px auto;
             background-color: black;
-            box-shadow: 0 0 10px rbga(255,255,255,1);
-            color: white
-             * {
-   font-family: myFont;
-}
-    p {
-      font-size: 16px;
-    }
+            box-shadow: 0 0 10px rgba(255,255,255,1);
+            color: white;
         }
+        
         .embedded-element {
             margin-top: 20px;
             border: 1px solid #ccc;
             padding: 10px;
-            font-family: Silkscreen;
-            src: url(fonts/Silkscreen-Regular.ttf);
+            text-align: center; /* Centers inline and inline-block elements */
         }
-        * {
-   font-family: myFont;
-}
-    p {
-      font-size: 16px;
-    }
-        color: white;
+        
+        .embedded-element iframe {
+            display: block;
+            margin: 0 auto; /* Centers block-level elements */
+        }
+        
+        /* Center the images at the bottom */
+        main > a {
+            display: inline-block;
+            margin: 10px;
+        }
+        
+        main {
+            text-align: center; /* Centers the links */
+        }
     </style>
 </head>
 <body>
-
     <header class="banner">
         <h1> </h1>
     </header>
-
     
     <main class="content">
-        <p style="text-align: center;" color: white >Hi! I'm Nijumet. I make games. And other things. I am not you. Probably. Unless you are me. Than I am you. I do not live on the Moon. Or Antarctica. Probably. I am most like;y a human. Or maybe I am a bot. Who knows (I do!) ?
+        <p style="text-align: center;">Hi! I'm Nijumet. I make games. And other things. I am not you. Probably. Unless you are me. Than I am you. I do not live on the Moon. Or Antarctica. Probably. I am most like;y a human. Or maybe I am a bot. Who knows (I do!) ?
         (*_*) (-@-) ( ' j ' ) (^0^) (+_+) Bye!</p>
-
         <div class="embedded-element">
-            <h2 style="text-align: center;" color: white >Try my game right here!</h2>
-            <!-- Embedded Scratch Project - Overcharger -->
-            <!-- Comment just to trigger a redeploy -->
+            <h2 style="text-align: center;">Try my game right here!</h2>
             <iframe src="https://scratch.mit.edu/projects/1185408184/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
-            <p style="text-align: center;" color: white > This is my new game, Overcharger. Click the green flag to start. Make sure to click the ? for instructions.</p>
+            <p style="text-align: center;">This is my new game, Overcharger. Click the green flag to start. Make sure to click the ? for instructions.</p>
         </div>
         <a href="https://scratch.mit.edu/users/nijumet"><img src="images/2025_11_04_0rg_Kleki.png" alt="Nijumet on Scratch" style="width:360px;height:250px;"></a>
-        <a href="easteregg.md"><img src="images/2025_11_06_0un_Kleki.png" alt="Nijumet on Scratch" style="width:10px;height:10px;"></a>
+        <a href="easteregg.md"><img src="images/2025_11_06_0un_Kleki.png" alt="Easter Egg" style="width:10px;height:10px;"></a>
     </main>
-
 </body>
 </html>
